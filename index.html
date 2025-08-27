@@ -142,11 +142,11 @@ h1{font-size:clamp(44px,7.2vw,86px);font-weight:900;line-height:1.06;letter-spac
 .range-input::-moz-range-thumb{width:18px;height:18px;border-radius:6px;background:var(--accent);border:2px solid #0A0A0A;}
 
 /* =========
-   “HOW WE CALCULATE” (ensure 3 columns)
+   "HOW WE CALCULATE" (2 columns)
    ========= */
 .calculator-explanation{max-width:var(--container);margin:40px auto 0;padding:28px 32px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;}
 .explanation-title{font-size:22px;font-weight:900;margin-bottom:16px;}
-.calculator-explanation .explanation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;}
+.calculator-explanation .explanation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;}
 .explanation-item h4{font-size:18px;margin-bottom:8px;}
 .explanation-item p{color:var(--text-2);font-size:16px;line-height:1.7;}
 
@@ -216,7 +216,7 @@ td{padding:20px 26px;color:var(--text);}
           <a href="#problem">Problem</a>
           <a href="#outpost-one">Solution</a>
           <a href="#calculator">Calculator</a>
-          <a href="#" class="btn btn-primary" id="nav-cta" onclick="openModal()">Unlock $<span class="nav-dynamic">2.9M</span> with Outpost</a>
+          <a href="#" class="btn btn-primary" id="nav-cta" onclick="openModal()">Unlock $<span class="nav-dynamic">2.3M</span> with Outpost</a>
         </div>
       </div>
     </div>
@@ -226,10 +226,10 @@ td{padding:20px 26px;color:var(--text);}
   <section class="hero">
     <div class="container">
       <h1>
-        Get <span class="solid-green-text" id="hero-pct">21%</span> more from Reface globally with Outpost
+        Get <span class="solid-green-text" id="hero-pct">24%</span> more from Reface globally with Outpost
       </h1>
       <p class="hero-subtitle">
-        <span class="company">Reface</span> is leaving $<span id="hero-value">2.9M</span> on the table every year.
+        <span class="company">Reface</span> is leaving $<span id="hero-value">2.3M</span> on the table every year.
         <br><br><strong>Unlock it with Outpost.</strong>
       </p>
       <div class="hero-buttons">
@@ -253,8 +253,8 @@ td{padding:20px 26px;color:var(--text);}
         <h2 class="section-title">The hidden cost of global expansion</h2>
         <p class="section-subtitle">
           Globals B2C apps are leaving substantial value on the table each year from inefficient payments
-          and tax infrastructure or relying on App / Play stores. We estimate it’s costing
-          <span class="company">Reface</span> $<span class="problem-dynamic">2.9M</span> per year in App / Play store fees and other costs.
+          and tax infrastructure or relying on App / Play stores. We estimate it's costing
+          <span class="company">Reface</span> $<span class="problem-dynamic">2.3M</span> per year in App / Play store fees and other costs.
         </p>
       </div>
       <div class="grid-3">
@@ -262,7 +262,7 @@ td{padding:20px 26px;color:var(--text);}
           <div class="card-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
-          <div class="card-value">30% of GMV</div>
+          <div class="card-value">32% of GMV</div>
           <div class="card-label">App/Play Store fee</div>
           <p class="card-description">High App / Play Store commissions erode margins and impose restrictions.</p>
         </div>
@@ -400,7 +400,7 @@ td{padding:20px 26px;color:var(--text);}
       <div class="value-hero">
         <div class="value-hero-content">
           <span>Total value unlocked by Outpost</span>
-          <span class="value-highlight" id="total-value">+$2.9M to your bank account</span>
+          <span class="value-highlight" id="total-value">+$2.3M to your bank account</span>
         </div>
       </div>
     </div>
@@ -422,15 +422,7 @@ td{padding:20px 26px;color:var(--text);}
               <label class="input-label">Current Reface GMV ($)</label>
               <div class="input-wrapper">
                 <input type="range" id="gmv_num" class="range-input"/>
-                <span class="range-value" id="gmv_val">$27,300,000</span>
-              </div>
-            </div>
-
-            <div class="input-group">
-              <label class="input-label">Additional payments fees and FX (%)</label>
-              <div class="input-wrapper">
-                <input type="range" id="payfx" class="range-input"/>
-                <span class="range-value" id="payfx_val">4.0%</span>
+                <span class="range-value" id="gmv_val">$7,200,000</span>
               </div>
             </div>
           </div>
@@ -441,33 +433,23 @@ td{padding:20px 26px;color:var(--text);}
             <h3>App / Play Store vs. Outpost</h3>
             <p class="calculator-subtitle">as a % of GMV</p>
 
-            <div class="result-item">
-              <span class="result-label">App store / play store fee</span>
-              <span class="result-value negative" id="app_fee">-30.0% = -$1.7M</span>
-            </div>
-
-            <div class="result-item">
-              <span class="result-label">Additional payments costs</span>
-              <span class="result-value negative" id="addl_payments">-4.0% = -$169.2K</span>
-            </div>
-
             <div class="highlight-box-red">
               <div class="result-item">
-                <span class="result-label"><strong>Total with App / Play store</strong></span>
-                <span class="result-value negative" id="total_app">-34.0% = -$1.9M</span>
+                <span class="result-label"><strong>Total with App / Play Store</strong></span>
+                <span class="result-value negative" id="total_app">-32.0% = -$2.3M</span>
               </div>
             </div>
 
             <div class="highlight-box-green">
               <div class="result-item">
                 <span class="result-label"><strong>Net impact with Outpost</strong></span>
-                <span class="result-value positive" id="net">+25.5% = +$1.4M</span>
+                <span class="result-value positive" id="net">+23.5% = +$1.7M</span>
               </div>
             </div>
 
             <div class="calc-cta-bottom">
-              <button class="btn btn-cta-large" id="cta" onclick="openModal()">UNLOCK $1.4M — BOOK A DEMO</button>
-              <div class="calc-note">*Net value is inclusive of Outpost’s flat fee.</div>
+              <button class="btn btn-cta-large" id="cta" onclick="openModal()">UNLOCK $1.7M — BOOK A DEMO</button>
+              <div class="calc-note">*Net value is inclusive of Outpost's flat fee.</div>
             </div>
           </div>
         </div>
@@ -483,22 +465,15 @@ td{padding:20px 26px;color:var(--text);}
         <div class="explanation-item">
           <h4>App / Play Store</h4>
           <p>
-            The App / Play Store charge a 30% commission to act as a Merchant of Record (MoR).
-            This is applied to the total GMV.
-          </p>
-        </div>
-    
-        <div class="explanation-item">
-          <h4>Additional costs</h4>
-          <p>
-            Stores charge high fixed fees for refunds/chargebacks and take FX spread on payouts. We model these at ~4% of GMV by default.
+            The App / Play Store charge a 32% total fee to act as a Merchant of Record (MoR).
+            This includes the 30% commission plus additional payment processing and FX fees.
           </p>
         </div>
     
         <div class="explanation-item">
           <h4>Outpost fee</h4>
           <p>
-            Outpost is a flat percentage of GMV. We do not cover refunds / chargeback fees - but negotiate the lowest on the market for you. We compare that to the store total to show net value unlocked. 
+            Outpost is a flat percentage of GMV. We do not cover refunds / chargeback fees - but negotiate the lowest on the market for you. We compare that to the Store total to show net value unlocked. 
           </p>
         </div>
       </div>
@@ -568,7 +543,7 @@ td{padding:20px 26px;color:var(--text);}
   <!-- FINAL CTA -->
   <section class="section" style="text-align:center;">
     <div class="container">
-      <h2 class="section-title">Unlocking $<span class="bottom-dynamic">2.9M</span> from your current GMV? Reimagine that!</h2>
+      <h2 class="section-title">Unlocking $<span class="bottom-dynamic">2.3M</span> from your current GMV? Reimagine that!</h2>
       <button class="btn btn-cta-large" style="margin-top:32px;" onclick="openModal()">Book demo →</button>
     </div>
   </section>
@@ -597,8 +572,7 @@ td{padding:20px 26px;color:var(--text);}
   const CONFIG = {
     company: "Reface",
     gmvStart: 7200000,           // starting GMV for the global calculator
-    fees: { app: 0.30, outpost: 0.085 }, // % of GMV (decimals)
-    payfxDefault: 0.04,            // 4% default additional pay/FX
+    fees: { app: 0.32, outpost: 0.085 }, // % of GMV (decimals) - updated to 32%
   };
 
   /* =========================================================
@@ -606,12 +580,11 @@ td{padding:20px 26px;color:var(--text);}
      Change only if you need a different range/step.
    ========================================================= */
   const SLIDERS = {
-    gmvMin: 1000_000, gmvMax: 25_000_000, gmvStep: 50_000,
-    payfxMin: 2, payfxMax: 10, payfxStep: 0.5
+    gmvMin: 1000_000, gmvMax: 25_000_000, gmvStep: 50_000
   };
 
   // ---- Derived state (no need to edit below) ----------------
-  const Calc = { gmv: CONFIG.gmvStart, payfx: CONFIG.payfxDefault };
+  const Calc = { gmv: CONFIG.gmvStart };
   const APP_FEE = CONFIG.fees.app;
   const OUTPOST_FEE = CONFIG.fees.outpost;
 
@@ -660,21 +633,15 @@ td{padding:20px 26px;color:var(--text);}
   // ---- Core compute -----------------------------------------
   function compute(){
     const gmv = Calc.gmv;
-    const payfx = Calc.payfx;
 
     const appFee   = APP_FEE * gmv;
-    const addl     = payfx * gmv;
-    const totalApp = appFee + addl;
     const outpost  = OUTPOST_FEE * gmv;
-    const net      = totalApp - outpost;
+    const net      = appFee - outpost;
 
-    setText("app_fee",       pctEqMoney(-APP_FEE, -appFee), "neg");
-    setText("addl_payments", pctEqMoney(-payfx,  -addl),    "neg");
-    setText("total_app",     pctEqMoney(-(APP_FEE+payfx), -(totalApp)), "neg");
-    setText("net",           pctEqMoney((APP_FEE+payfx-OUTPOST_FEE), net), "pos");
+    setText("total_app",     pctEqMoney(-APP_FEE, -appFee), "neg");
+    setText("net",           pctEqMoney((APP_FEE-OUTPOST_FEE), net), "pos");
 
     setTxt("cta", `UNLOCK ${fmtShort(net)} — BOOK A DEMO`);
-    setTxt("fx-card", fmtShort(payfx*gmv).replace("$","")); // card shows a prefixed $
 
     updateGlobals(net, net/gmv);
   }
@@ -685,9 +652,6 @@ td{padding:20px 26px;color:var(--text);}
     if(field==="gmv"){
       Calc.gmv = val;
       setTxt("gmv_val", currency0(val));
-    }else{
-      Calc.payfx = val/100;
-      setTxt("payfx_val", val.toFixed(1)+"%");
     }
     compute();
   }
@@ -706,16 +670,11 @@ td{padding:20px 26px;color:var(--text);}
       if(window.scrollY>50) n.classList.add("scrolled"); else n.classList.remove("scrolled");
     });
 
-    // 3) Configure sliders from SLIDERS (so you never hunt in HTML)
+    // 3) Configure slider from SLIDERS (so you never hunt in HTML)
     const g = document.getElementById("gmv_num");
     g.min=SLIDERS.gmvMin; g.max=SLIDERS.gmvMax; g.step=SLIDERS.gmvStep; g.value=Calc.gmv;
     g.oninput = e => handleSlider("gmv", e.target);
     setTxt("gmv_val", currency0(Calc.gmv));
-
-    const p = document.getElementById("payfx");
-    p.min=SLIDERS.payfxMin; p.max=SLIDERS.payfxMax; p.step=SLIDERS.payfxStep; p.value=Calc.payfx*100;
-    p.oninput = e => handleSlider("payfx", e.target);
-    setTxt("payfx_val", (Calc.payfx*100).toFixed(1)+"%");
 
     // 4) Initial compute
     compute();
